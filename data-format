@@ -1,0 +1,20 @@
+== data format ==
+left_stick;right_stick;ABC;buttons;stick_buttons
+
+>> left_stick X:Y
+X - 00-FF
+Y - 00-FF
+
+>> right_stick X:Y
+Аналогично X:Y
+
+>> ABC int
+Передаётся A, B или C
+
+>> buttons int
+l_but + r_but*2
+
+>> stick_buttons
+l_stck_but + r_stck_but*2
+
+X:Y;X:Y;ABC;l_but + r_but*2;l_stck_but + r_stck_but*2
